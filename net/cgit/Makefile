@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2009-2017 OpenWrt.org
+# Copyright (C) 2009-2018 OpenWrt.org
 #
 # This is free software, licensed under the GNU General Public License v2.
 # See /LICENSE for more information.
@@ -61,21 +61,6 @@ MAKE_FLAGS := \
 
 CONFIGURE_ARGS += \
 	--without-iconv \
-
-#define Build/Patch
-#endef
-
-#define Build/Prepare
-#endef
-
-#define Build/Configure
-#endef
-
-#define Build/Compile
-#endef
-
-#define Build/Install
-#endef
 
 define Package/cgit/install
 	$(INSTALL_DIR) $(1)/opt/var/www/htdocs/cgit
